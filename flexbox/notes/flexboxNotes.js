@@ -30,9 +30,20 @@
  *      Direction also plays a role here, determining the direction new lines
  *      are stacked in
  *    - 'nowrap' (default): single-line / left to right in 'ltr'; right to
-        left in 'rtl'
-      - 'wrap': multi-line / left to right in 'ltr'; right to left in 'rtl'
-      - 'wrap-reverse': multi-line / right to left in 'ltr'; left to right in 'rtl'
+ *      left in 'rtl'
+ *    - 'wrap': multi-line / left to right in 'ltr'; right to left in 'rtl'
+ *    - 'wrap-reverse': multi-line / right to left in 'ltr'; left to right in 'rtl'
+ *
+ *  'order: <interger>':
+ *    - By default, flex items are laid out in the source order. However, the order
+ *      property controls the order in which they appear in the flex container
+ *
+ *  'flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]':
+ *    - takes all the widths of each element and evenly distributes amongst each other
+ *    - This is the shorthand for 'flex-grow', 'flex-shrink' and 'flex-basis'
+ *      combined. The second and third parameters (flex-shrink and flex-basis)
+ *      are optional. Default is 0 1 auto.
+ *
  *  'vh':
  *    - stands for view height and has nothing to do with flexbox, gives it
  *      100% view height
