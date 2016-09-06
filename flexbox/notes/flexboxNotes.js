@@ -3,6 +3,10 @@
  *  'a guide to flexbox':
  *    - src: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
  *
+ *  'Axis':
+ *    - 'Main Axis': default goes left to right
+ *    - 'Cross Axis': default goes from top to bottom 
+ *
  *  'display: flex;':
  *    - display defines a flex container; inline or block depending on the
  *      given value. It enables a flex context for all its direct children
@@ -13,7 +17,7 @@
  *        takes what it needs
  *
  *  'flex-direction: row | row-reverse | column | column-reverse;':
- *    - This establishes the main-axis, thus defining the direction flex items
+ *    - This establishes the 'main axis', thus defining the direction flex items
  *      are placed in the flex container. Flexbox is (aside from optional
  *      wrapping) a single-direction layout concept. Think of flex items as
  *      primarily laying out either in horizontal rows or vertical columns
@@ -37,6 +41,18 @@
  *  'order: <interger>':
  *    - By default, flex items are laid out in the source order. However, the order
  *      property controls the order in which they appear in the flex container
+ *
+ *  'justify-content: flex-start | flex-end | center | space-between | space-around;':
+ *    - 'flex-start' (default): items are packed toward the start line
+ *    - 'flex-end': items are packed toward to end line
+ *    - 'center': items are centered along the line
+ *    - 'space-between': items are evenly distributed in the line; first item is
+ *      on the start line, last item on the end line
+ *    - 'space-around': items are evenly distributed in the line with equal space
+ *      around them. Note that visually the spaces aren't equal, since all the
+ *      items have equal space on both sides. The first item will have one unit
+ *      of space against the container edge, but two units of space between the
+ *      next item because that next item has its own spacing that applies
  *
  *  'flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]':
  *    - takes all the widths of each element and evenly distributes amongst each other
