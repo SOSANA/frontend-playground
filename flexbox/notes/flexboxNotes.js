@@ -5,7 +5,7 @@
  *
  *  'Axis':
  *    - 'Main Axis': default goes left to right
- *    - 'Cross Axis': default goes from top to bottom 
+ *    - 'Cross Axis': default goes from top to bottom
  *
  *  'display: flex;':
  *    - display defines a flex container; inline or block depending on the
@@ -53,6 +53,16 @@
  *      items have equal space on both sides. The first item will have one unit
  *      of space against the container edge, but two units of space between the
  *      next item because that next item has its own spacing that applies
+ *
+ *  'align-items: flex-start | flex-end | center | baseline | stretch;':
+ *    - This defines the default behaviour for how flex items are laid out along
+ *      the cross axis on the current line. Think of it as the justify-content
+ *      version for the cross-axis (perpendicular to the main-axis).
+ *    - 'flex-start': cross-start margin edge of the items is placed on the cross-start line
+ *    - 'flex-end': cross-end margin edge of the items is placed on the cross-end line
+ *    - 'center': items are centered in the cross-axis
+ *    - 'baseline': items are aligned such as their baselines align
+ *    - 'stretch' (default): stretch to fill the container (still respect min-width/max-width)
  *
  *  'flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]':
  *    - takes all the widths of each element and evenly distributes amongst each other
