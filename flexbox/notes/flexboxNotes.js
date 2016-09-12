@@ -78,6 +78,12 @@
  *    - space-around: lines evenly distributed with equal space around each line
  *    - stretch (default): lines stretch to take up the remaining space
  *
+ *  'align-self: auto | flex-start | flex-end | center | baseline | stretch;':
+ *    - This allows the default alignment (or the one specified by align-items)
+ *      to be overridden for individual flex items. Please see the align-items
+ *      explanation to understand the available values
+ *    - Note that float, clear and vertical-align have no effect on a flex item
+ *
  *  'flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]':
  *    - takes all the widths of each element and evenly distributes amongst each other
  *    - This is the shorthand for 'flex-grow', 'flex-shrink' and 'flex-basis'
