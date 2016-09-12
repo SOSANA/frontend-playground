@@ -43,6 +43,7 @@
  *      property controls the order in which they appear in the flex container
  *
  *  'justify-content: flex-start | flex-end | center | space-between | space-around;':
+ *    - justifies main axis left to right
  *    - 'flex-start' (default): items are packed toward the start line
  *    - 'flex-end': items are packed toward to end line
  *    - 'center': items are centered along the line
@@ -65,6 +66,7 @@
  *    - 'stretch' (default): stretch to fill the container (still respect min-width/max-width)
  *
  *  'align-content: flex-start | flex-end | center | space-between | space-around | stretch;':
+ *    - align-content justifies cross-axis top to bottom
  *    - This aligns a flex container's lines within when there is extra space in
  *      the cross-axis, similar to how justify-content aligns individual items
  *      within the main-axis
