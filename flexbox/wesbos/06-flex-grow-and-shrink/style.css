@@ -34,11 +34,22 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 }
 
 .box1 {
-  flex:10 5 400px;
+  /* we will never right it like this */
+  /*
+  flex-basis: 400px;
+  flex-grow: 10;
+  flex-shrink: 5;
+  */
+  /* same as above but instead we use flex which has these defauls built in,
+     first is grow, second is shrink, and third is basis*/
+  flex: 10 5 400px;
 }
 
 .box2 {
-  flex:1 1 400px;
+  /*
+  flex-basis: 400px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  */
+ flex: 1 1 400px;
 }
-
-
