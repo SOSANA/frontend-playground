@@ -2,6 +2,14 @@
  * Notes:
  *  'a guide to flexbox':
  *    - src: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ *  'auto-prefixer':
+ *    - parses CSS files and adds vendor prefixes to CSS rules using the Can I
+ *      Use database to determine which prefixes are needed. All you have to do
+ *      is add it to your asset building tool (webpack, gulp, etc) and you can
+ *      totally forget about CSS vendor prefixes (webkit transitions, direction,
+ *      etc). Just write regular CSS according to the latest W3C specifications
+ *      without any prefixes
+ *    - src: https://autoprefixer.github.io/
  *
  *  'Axis':
  *    - 'Main Axis': default left to right
