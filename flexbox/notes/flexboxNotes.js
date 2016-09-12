@@ -4,8 +4,8 @@
  *    - src: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
  *
  *  'Axis':
- *    - 'Main Axis': default goes left to right
- *    - 'Cross Axis': default goes from top to bottom
+ *    - 'Main Axis': default left to right
+ *    - 'Cross Axis': default from top to bottom
  *
  *  'display: flex;':
  *    - display defines a flex container; inline or block depending on the
@@ -61,8 +61,20 @@
  *    - 'flex-start': cross-start margin edge of the items is placed on the cross-start line
  *    - 'flex-end': cross-end margin edge of the items is placed on the cross-end line
  *    - 'center': items are centered in the cross-axis
- *    - 'baseline': items are aligned such as their baselines align
+ *    - 'baseline': font items are aligned as baselines
  *    - 'stretch' (default): stretch to fill the container (still respect min-width/max-width)
+ *
+ *  'align-content: flex-start | flex-end | center | space-between | space-around | stretch;':
+ *    - This aligns a flex container's lines within when there is extra space in
+ *      the cross-axis, similar to how justify-content aligns individual items
+ *      within the main-axis
+ *    - flex-start: lines packed to the start of the container
+ *    - flex-end: lines packed to the end of the container
+ *    - center: lines packed to the center of the container
+ *    - space-between: lines evenly distributed; the first line is at the start
+ *      of the container while the last one is at the end
+ *    - space-around: lines evenly distributed with equal space around each line
+ *    - stretch (default): lines stretch to take up the remaining space
  *
  *  'flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]':
  *    - takes all the widths of each element and evenly distributes amongst each other
