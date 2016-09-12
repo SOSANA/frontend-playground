@@ -50,6 +50,8 @@
  *    - This is the shorthand for 'flex-grow', 'flex-shrink' and 'flex-basis'
  *      combined. The second and third parameters (flex-shrink and flex-basis)
  *      are optional. Default is 0 1 auto.
+ *    - flex which has 'flex-grow', 'flex-shrink' and 'flex-basis' built in as
+ *      default. First is grow, second is shrink, and third is basis
  *
  *  'flex-direction: row | row-reverse | column | column-reverse;':
  *    - This establishes the 'main axis', thus defining the direction flex items
@@ -75,6 +77,7 @@
  *      to auto, the extra space is distributed based on its 'flex-grow' value.
  *
  *  'flex-grow: <number>; | default 0':
+ *    - how we deal with the extra space available
  *    - This defines the ability for a flex item to grow if necessary. It accepts
  *      a unitless value that serves as a proportion. It dictates what amount of
  *      the available space inside the flex container the item should take up
@@ -82,10 +85,12 @@
  *      will be distributed equally to all children. If one of the children a
  *      value of 2, the remaining space would take up twice as much space as the
  *      others (or it will try to, at least
+ *
  *  'flex-shrink: <number>; | default 1':
+ *    - how we deal with there is no extra space available
  *    - This defines the ability for a flex item to shrink if necessary
  *    - Negative numbers are invalid
- *    
+ *
  *  'flex-wrap: nowrap | wrap | wrap-reverse;':
  *    - By default, flex items will all try to fit onto one line. You can
  *      change that and allow the items to wrap as needed with this property.
