@@ -5,6 +5,7 @@ export default () => {
     <div className="wrapper">
 
       <nav className="flex-nav">
+        <a href="#" className="toggleNav">☰ Menu</a>
         <ul>
           <li><a href="#">Item 01</a></li>
           <li><a href="#">Item 02</a></li>
