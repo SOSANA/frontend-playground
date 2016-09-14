@@ -43,16 +43,47 @@ a:hover {
   list-style: none;
   margin: 0;
   padding: 0;
-
+  display: flex;
 }
 
+/* takes 3 times the space for all of the list items */
+.flex-nav li {
+  flex: 3;
+}
 
+/* these social icons will over write the amount of space needed */
+.flex-nav .social {
+  flex: 1;
+}
+
+/* for applying web page break points */
 @media all and (max-width:1000px) {
+  /* flex-wrap will not work without specifying widths below */
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
 
+  /* to be able to wrap our ul elements we need to give it a width,
+     this allows us to stack all li one by one */
+  .flex-nav li {
+    /* grow at 1, shrink at 1, and 50 % wide next to each other */
+    flex: 1 1 50%;
+  }
 
+  /* .flex-nav .social above is over writing our break points, so we had it here
+     this can be seen in the dev tools styles tab scratching out our flex widths
+     for social icons */
+  .flex-nav .social {
+    flex: 1 1 25%;
+  }
 }
 
+/* for applying mobile break points and can be any break point you want */
 @media all and (max-width:500px) {
-
+  /* this overrides above media .flex-nav li and .flex-nav .social for
+     grow, shrink, and width so the icons can stay 4 in a row  */
+  .flex-nav li {
+    flex-basis: 100%;
+  }
 
 }
