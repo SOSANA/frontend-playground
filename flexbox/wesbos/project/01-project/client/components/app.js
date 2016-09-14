@@ -6,7 +6,7 @@ import Footer from './footer';
 export default class App extends Component { // eslint-disable-line
   render() {
     return (
-      <div>
+      <div className="wrapper">
         <Header />
         <Nav />
         {this.props.children}
