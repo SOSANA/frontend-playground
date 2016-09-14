@@ -39,7 +39,7 @@ const webpackConfig = {
       },
       {
         test: /\.css$/,
-        loaders: ['style', 'css'],
+        loaders: ['style', 'css', 'postcss'],
         include: PATHS.style,
       }
     ]
