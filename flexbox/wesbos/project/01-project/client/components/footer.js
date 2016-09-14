@@ -2,8 +2,8 @@ import React from 'react';
 
 export default () => {
   return (
-    <div>
+    <footer>
       <p>&copy; Sosana Inc.</p>
-    </div>
+    </footer>
   );
 };
