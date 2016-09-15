@@ -1,5 +1,5 @@
 # Express, React, Redux, and Webpack Starter App
-A quick starter app for kick starting apps using Express.JS, React.JS, Redux, and Webpack.
+This project covers 08-010
 
 Install project dependencies
 ```
