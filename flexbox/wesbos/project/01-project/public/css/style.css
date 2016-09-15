@@ -67,7 +67,7 @@ section, footer {
   display: flex;
 }
 
-/* takes 3 times the space for all of the list items */
+/* Flext Item, takes 3 times the space for all of the list items */
 .flex-nav li {
   flex: 3;
 }
@@ -99,7 +99,7 @@ section, footer {
   }
 }
 
-/* for applying mobile break points and can be any break point you want */
+/* for applying mobile break points (500px) and can be any break point you want */
 @media all and (max-width:500px) {
   /* this overrides above media .flex-nav li and .flex-nav .social for
      grow, shrink, and width so the icons can stay 4 in a row  */
@@ -107,4 +107,52 @@ section, footer {
     flex-basis: 100%;
   }
 
+  /* Flex Container, 'display: flex;' turns our wrapper into a flex container
+     and our immediate children into a flex items, using 'flex-direction: column;'
+     changes the direction into a column view (top to bottom) rather than row
+     (default left to right) */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Flex Item, applying ordering to each one of these items, putting a default
+     order on every flex item, this is a quick selector of every immediate child
+     of wrapper */
+  .wrapper > * {
+    order: 9999;
+  }
+
+  .flex-nav {
+    order: 1;
+  }
+
+  /* toggles our menu at 500px break point */
+  .toggleNav {
+    display: block;
+  }
+
+  /* disable flex items at 500px break point */
+  .flex-nav ul {
+    display: none;
+  }
+
+  /* targeting our jquery toggle handler, using 'display: flex;' to stack our icons
+     in a row rather than in a column */
+  .flex-nav ul.open {
+    display: flex;
+  }
+
+  /* ordering our remaining elements */
+  .top {
+    order: 2;
+  }
+
+  .details {
+    order: 3;
+  }
+
+  .signup {
+    order: 4;
+  }
 }
