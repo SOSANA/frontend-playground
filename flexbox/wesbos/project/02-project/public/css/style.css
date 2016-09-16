@@ -34,9 +34,49 @@ a:hover {
   background:rgba(0,0,0,0.4);
 }
 
-
+/* our flex container */
 .slider-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+}
+
+/* our first flex item */
+.slider-nav li {
+  /* this is flex item-ish */
+  flex: 2; /* making the items 2 times bigger than the arrows */
+  /* when you don't know whats going on with your layout, put a boarder around */
+  /*border: 1px solid red;*/
+  text-align: center;
+  /* helps fill each item in the container */
+  display: flex; /* this is flex container-ish */
+}
+
+/* fixing our arrow */
+.slider-nav .arrow {
+  flex: 1; /* making arrows 2 times small than the rest of the items */
+}
+
+/* applying larger arrows */
+.arrow a {
+  font-size: 30px;
+}
+
+/* will make things look nicer and see what we are doing here */
+.slider-nav a {
+  /* because this a flex item we can use flex basis in stead of 'display: block'
+     and 'width: 100%' */
+  flex-basis: 100%;
+  /* making it a flex container and item */
+  display: flex;
+  /* we want to stretch as well and center */
+  align-items: center; /* takes the child element 'span' item and center it */
+}
+
+/* this is the flex item, was added to have text span anchor tag */
+.slider-nav span {
+  /* by default span are inline */
+  display: block;
+  width: 100%;
 }
