@@ -40,7 +40,6 @@ a {
   border-radius:4px;
 }
 
-
 .plan h2 {
   text-transform: uppercase;
   color:white;
@@ -58,5 +57,30 @@ a {
 .pricing-grid {
   max-width:750px;
   margin: 0 auto;
+  /*border: 4px solid red; /* helpfull to show our boundaries */*/
+  display: flex; /* turn on flexbox container */
+  align-items: center; /* if we don't want them to be stretched across or even */
+}
 
+/* for each of our flex plans */
+.plan {
+  /* just applying some styling */
+  background: rgba(255,255, 255, 0.2);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  flex: 1; /* individually split them up */
+  display: flex; /* nesting flexbox container */
+  flex-wrap: wrap; /* turns each one child plan class */
+}
+
+/* grabbing all direct descendants */
+.plan > * {
+  flex: 1 1 100%; /* setting grow, shrink, and basis */
+}
+
+/* targeting our buttons so they can be aligned at the bottom */
+.plan .cta {
+  align-self: flex-end;
 }
