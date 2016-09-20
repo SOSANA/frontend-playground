@@ -5,6 +5,7 @@ import PricingPlan3 from './pricingPlan3';
 
 export default () => {
   return (
+    /* A Flex Container */
     <div className="pricing-grid">
       <PricingPlan1 />
       <PricingPlan2 />
