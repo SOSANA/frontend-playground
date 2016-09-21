@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Welcome from './welcome/welcomeMain';
 
 export default class App extends Component { // eslint-disable-line
   render() {
