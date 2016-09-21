@@ -8,6 +8,7 @@ export default () => {
       <div className="item">You can tell the world you never was my girl</div>
       <div className="item">You can burn my clothes when I'm gone</div>
       <div className="item large">Or you can tell your friends just what a fool I've been</div>
+
       <div className="item">And </div>
 
       <div className="item">You </div>
