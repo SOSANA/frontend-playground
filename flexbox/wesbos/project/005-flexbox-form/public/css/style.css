@@ -24,7 +24,6 @@ a {
 }
 
 /*Video*/
-
 .dog {
   height:100%;
   -webkit-filter:blur(5px);
@@ -63,3 +62,20 @@ a {
 }
 
 /*Flexbox Starts Here*/
+.cover {
+  display:flex; /* our container */
+  justify-content:center; /* horizontally center on main axes left to right */
+  align-items:center; /* align vertically centered */
+}
+
+.flex-form {
+  z-index: 10;
+  border:20px solid rgba(0,0,0,0.3);
+  border-radius:5px;
+  display:flex; /* makes all flex items stretch across and evenly make same size */
+}
+
+/* space for placeholder text to fit in input item */
+input[type="search"] {
+  flex-basis:500px;
+}
