@@ -24,12 +24,15 @@ a {
 }
 
 /*Video*/
-.dog {
-  height:100%;
-  -webkit-filter:blur(5px);
-  filter:blur(5px);
-  position: absolute;
-  top: 0;
+.city {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  /*z-index: -100;*/
 }
 
 /*Hack to get them to align properly */
@@ -77,5 +80,10 @@ a {
 
 /* space for placeholder text to fit in input item */
 input[type="search"] {
+  flex-basis:500px;
+}
+
+/* space for placeholder text to fit in input item */
+input[type="date"] {
   flex-basis:500px;
 }
