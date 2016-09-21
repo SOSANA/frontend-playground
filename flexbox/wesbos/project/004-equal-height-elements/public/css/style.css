@@ -32,4 +32,16 @@ a {
   font-size: 30px;
 }
 
-/* Flexbox Starts Here: */
+/* making sure the height of each column are the same size as the largest one */
+.elements {
+  display: flex; /* setting up our flex container */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  /* setting our grow, shrink, and width. We use calc because we are using
+     .item { margin: 10px} above to minus 20px for 10px margin on either side
+     and create a 3 column and row grid */
+  flex: 1 1 calc(33.33% - 20px);
+}
